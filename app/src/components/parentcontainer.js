@@ -4,10 +4,10 @@ import List from "./list";
 const ParentContainer = () => {
   return (
     <div className="content">
-      <div>
+      <div className="list-container">
         <List />
       </div>
-      <div>
+      <div className="action-box-container">
         <ActionBox />
       </div>
     </div>

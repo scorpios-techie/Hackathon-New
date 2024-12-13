@@ -15,21 +15,36 @@
     padding: 20px;
     text-align: center;
   }
-  
+
   .content {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 1rem; /* Add space between components */
+    align-items: stretch; /* Optional: Make children fill the container width */
+  }
+  
+  .list-container,
+  .action-box-container {
+    /* Add any specific styles for individual containers if needed */
+    border: 1px solid #ddd; /* Example: Add a light border */
+    padding: 1rem;         /* Example: Add padding */
+    border-radius: 4px;    /* Example: Add rounded corners */
+  }
+  
+  /* .content {
     padding: 20px;
     background-color: #f8f9fa;
     min-height: 300px; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
+  } */
 
   .left-list {
     overflow-y: auto; 
     background-color: #f8f9fa; 
     padding: 10px;
-    border-right: 1px solid #ccc; 
+    /* border-right: 1px solid #ccc;  */
     max-height: 300px; 
     scrollbar-width: thin; 
     scrollbar-color: #007bff #f8f9fa; 

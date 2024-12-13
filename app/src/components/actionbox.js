@@ -9,9 +9,9 @@ const ActionBox = () => {
 
   return (
     <div>
-      <h2>Action Box</h2>
+      {/* <h2>Action Box</h2> */}
       <div>
-        <ListSummary item={dummyItem} />
+        <ListSummary />
       </div>
       <button>Demo Button</button>
     </div>

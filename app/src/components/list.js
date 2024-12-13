@@ -4,7 +4,7 @@ import { items } from "../mocks/data";
 function List() {
   const ShowSummary = (item) => {
     return () => {
-      alert(`Summary for item: ${item.Description}`);
+      //alert(`Summary for item: ${item.Description}`);
     };
   };
 
