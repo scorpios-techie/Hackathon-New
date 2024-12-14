@@ -1,14 +1,20 @@
 import ActionBox from "./actionbox";
-import List from "./list";
+import InputContainer from "./inputcontainer";
 
 const ParentContainer = () => {
+  const selectedItem = {
+    ID: 1,
+    Text: "Meals",
+    Description: "Provided meal vouchers for rescheduled flight.",
+  };
+
   return (
-    <div className="content">
-      <div className="list-container">
-        <List />
+    <div>
+      <div>
+        <InputContainer />
       </div>
-      <div className="action-box-container">
-        <ActionBox />
+      <div>
+        <ActionBox Item={selectedItem} />
       </div>
     </div>
   );

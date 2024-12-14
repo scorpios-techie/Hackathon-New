@@ -1,10 +1,10 @@
-const ListSummary = (item) => {
-  //const { Text, Description } = item;
-  console.log(item);
+const ListSummary = ({ Item }) => {
+  const { Text, Description } = Item;
+  console.log(Item);
   return (
     <div>
-      <h2>Meals</h2>
-      <p>Summary of meals.</p>
+      <h2>{Text}</h2>
+      <p>{Description}</p>
     </div>
   );
 };

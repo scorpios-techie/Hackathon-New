@@ -10,6 +10,7 @@ function List() {
 
   return (
     <div className="left-list">
+      <h2>Category</h2>
       <ul>
         {items.map((item) => (
           <li onClick={ShowSummary(item)} key={item.ID}>

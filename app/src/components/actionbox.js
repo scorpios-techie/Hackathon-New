@@ -1,17 +1,10 @@
 import ListSummary from "./listsummary";
 
-const ActionBox = () => {
-  const dummyItem = {
-    ID: 1,
-    Text: "Meal",
-    Description: "Provided meal vouchers and rescheduled flight.",
-  };
-
+const ActionBox = ({ Item }) => {
   return (
     <div>
-      {/* <h2>Action Box</h2> */}
       <div>
-        <ListSummary />
+        <ListSummary Item={Item} />
       </div>
       <button>Demo Button</button>
     </div>
