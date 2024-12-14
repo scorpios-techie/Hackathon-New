@@ -52,15 +52,6 @@
     background-color: #0056b3; 
     color: white;
   }
-  
-  /* .stacked-container {
-    display: flex;
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-items: center;
-    gap: 1rem; 
-  } */
 
   .stacked-container {
     display: flex;
@@ -78,3 +69,38 @@
     border: solid green;
     border-radius: 5px;
   }
+
+  .action-button {
+    margin: 5px;
+    padding: 10px 15px; /* Adjusted padding for better click area */
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* Text color for contrast */
+    border: none;
+    border-radius: 8px; /* Slightly more rounded corners for a modern look */
+    cursor: pointer;
+    font-size: 1rem; /* Larger text for better readability */
+    font-weight: 500; /* Slightly bolder text for emphasis */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for interactions */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Hover effect */
+.action-button:hover {
+    background-color: #0056b3; /* Darker blue for hover state */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Focus state for accessibility */
+.action-button:focus {
+    outline: 3px solid rgba(0, 123, 255, 0.5); /* Visible focus ring */
+    outline-offset: 2px;
+}
+
+/* .suggestion-container {
+    display: flex;
+}*/
+
+.suggestion-button{
+    background-color: gray;
+} 

@@ -1,6 +1,6 @@
 const ListSummary = ({ Item }) => {
   const { Text, Description } = Item;
-  console.log(Item);
+
   return (
     <div>
       <h2>{Text}</h2>

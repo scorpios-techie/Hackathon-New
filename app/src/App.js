@@ -46,21 +46,6 @@ const appRouter = createBrowserRouter([
   },
 ]);
 
-const AppLayout = () => {
-  return (
-    <div>
-      <main>
-        <Header />
-        <div className="border-bottom"></div>
-
-        <ParentContainer />
-        <div className="border-bottom"></div>
-        <Footer />
-      </main>
-    </div>
-  );
-};
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<RouterProvider router={appRouter} />);
