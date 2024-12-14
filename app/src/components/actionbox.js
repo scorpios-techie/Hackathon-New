@@ -4,6 +4,7 @@ import SuggestionContainer from "./suggestionContainer";
 
 const ActionBox = ({ Item }) => {
   const Suggestions = ["Suggest", "Suggestgf", "Sugge"];
+  let blueStyle = { backgroundColor: "#007bff" };
   return (
     <div>
       <div>
@@ -11,8 +12,8 @@ const ActionBox = ({ Item }) => {
       </div>
 
       <div>
-        <ActionButton Text="Defer" />
-        <ActionButton Text="Provide Solution" />
+        <ActionButton style={blueStyle} Text="Defer" />
+        <ActionButton style={blueStyle} Text="Provide Solution" />
       </div>
 
       <SuggestionContainer Suggestions={Suggestions} />
